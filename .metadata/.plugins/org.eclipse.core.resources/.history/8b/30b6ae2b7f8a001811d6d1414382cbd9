@@ -1,0 +1,16 @@
+package Idea.tz.RestAPI1;
+
+public class HttpRequest {
+	
+	
+	public static void main(String[] args) {
+		
+	URL url = new URL();
+		
+		
+		
+	
+		
+	}
+
+}

@@ -1,0 +1,45 @@
+package idea.tz.com.idea.tz.com;
+
+import org.testng.Assert;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.specification.RequestSpecification;
+
+
+
+public class App extends RestConstants
+{
+    public static void main( String[] args )
+    {
+       
+    	
+    	App a = new App();
+    	
+    	RestAssured.baseURI= "https://con.ideamovieclub.net";
+    	
+    	RequestSpecification httpRequest = RestAssured.given();
+    	
+    //io.restassured.response.Response response = httpRequest.request(Method.GET, "/v1/livestreams?iosbuildversion=2.2.6");
+    	
+    	io.restassured.response.Response response = httpRequest.request(Method.GET, a.LiveTV );
+
+    	
+    	int StatusCode = response.getStatusCode();
+    	
+    	Assert.assertEquals(StatusCode, 200, "Correct status code");
+    	
+    	//String responeBody = response.getBody().asString();
+    	
+    	System.out.println(response.headers());
+    	System.out.println(response.get);
+    	System.out.println("Status Code" + response.getStatusCode());
+    	
+    	System.out.println(response.getBody().asInputStream());
+    	
+    	
+    	
+    	
+    	
+    }
+}

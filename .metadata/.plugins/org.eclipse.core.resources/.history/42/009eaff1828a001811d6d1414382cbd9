@@ -1,0 +1,16 @@
+package idea.tz.Ditto.com;
+
+import io.restassured.RestAssured;
+
+public class LiveTVAPI {
+
+	
+	public static void main(String[] args) {
+	
+		RestAssured.baseURI = "https://con.ideamovieclub.net/v1/livestreams?iosbuildversion=2.2.6";
+		
+	}
+	
+	
+
+}

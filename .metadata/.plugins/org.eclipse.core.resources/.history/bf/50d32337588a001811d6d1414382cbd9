@@ -1,0 +1,19 @@
+package idea.tz.Ditto.com;
+
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+public class Streaming {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		RestAssured.baseURI="";
+		RequestSpecification request = RestAssured.given();
+		
+		
+		
+
+	}
+
+}

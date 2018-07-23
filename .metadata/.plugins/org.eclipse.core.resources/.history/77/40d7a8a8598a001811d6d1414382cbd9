@@ -1,0 +1,38 @@
+package idea.tz.Ditto.com;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+public class Streaming {
+
+	public static void main(String[] args) throws UnknownHostException {
+		// TODO Auto-generated method stub
+		
+		//Getauth and token 
+
+		
+		InetAddress ip = InetAddress.getLocalHost();
+		
+		GetTokenId gt = new GetTokenId();
+		String token = gt.TokenID;
+		
+
+		
+		RestAssured.baseURI="";
+		RequestSpecification request = RestAssured.given();
+		
+		
+		request.headers("Content-Type","application/json");
+		request.headers("Accept","application/json");
+
+		request.formParam("auth_token", "TUcJYNdpPqq7KURLLzYJ");
+		request.formParam("region","IN");
+		request.formParam("token_id",token);
+		request.formParam("ip_addr","ip");
+
+	}
+
+}

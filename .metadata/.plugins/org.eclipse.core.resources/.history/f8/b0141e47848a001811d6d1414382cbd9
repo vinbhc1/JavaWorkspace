@@ -1,0 +1,38 @@
+package idea.tz.Ditto.com;
+
+import java.util.List;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class LiveTVAPI {
+
+	
+	public static void main(String[] args) {
+	
+		RestAssured.baseURI = "https://con.ideamovieclub.net/v1/livestreams?iosbuildversion=2.2.6";
+		RequestSpecification req = RestAssured.given();
+		
+		Response response = req.get(RestAssured.baseURI);
+		
+		if(response.getStatusCode()==200) {
+			
+		JsonPath jp =new JsonPath(response.getBody().asString());
+		
+		List<String> LiveTV = jp.getList("RestAssured.baseURI");
+		
+			
+			
+			
+		}
+		else {
+			System.out.println("Getting failure response");
+			System.out.println(response.getStatusCode());
+		}
+	}
+	
+	
+
+}

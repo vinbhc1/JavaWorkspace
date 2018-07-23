@@ -1,0 +1,20 @@
+package Idea.tz.RestAPI1;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+
+import javax.net.ssl.HttpsURLConnection;
+
+public class HttpRequest {
+	
+	
+		
+		
+		
+	
+		
+	}
+
+}

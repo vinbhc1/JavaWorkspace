@@ -1,0 +1,10 @@
+package idea.tz.com.idea.tz.com;
+
+public class PostMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

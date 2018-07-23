@@ -1,0 +1,40 @@
+package idea.tz.Ditto.com;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class GetTokenId {
+	
+ public String TokenID;
+ public String SessionID;
+	
+	public Void  DittoSignUp() {
+		
+		RestAssured.useRelaxedHTTPSValidation();
+    	RestAssured.baseURI ="https://api.prod.dittotv.com/users/signin_with_external_auth";
+    	RequestSpecification request = RestAssured.given();
+    	request.formParam("auth_token", "TUcJYNdpPqq7KURLLzYJ");
+    	request.formParam("region", "IN");
+    	request.formParam("register_user", "true");
+    	request.formParam("third_party", "ideamovieclub");
+    	request.formParam("msisdn", "00917996582920");
+      	Response res = request.post(RestAssured.baseURI);
+     
+    	//System.out.println(res.getBody().asString());
+    	
+    	
+    	JsonPath jp = new JsonPath(res.asString());
+    	
+    	//System.out.println(jp.get("user.msisdn"));
+    	
+		
+    	TokenID = jp.get("user.msisdn");
+		
+    	SessionID = jp.get("user.session_id");
+    	
+		
+	}
+
+}

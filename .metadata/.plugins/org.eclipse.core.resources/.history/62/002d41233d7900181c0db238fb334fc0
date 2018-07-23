@@ -1,0 +1,23 @@
+package idea.tz.com.idea.tz.com;
+
+import org.json.JSONObject;
+
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+public class PostMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		RestAssured.baseURI ="http://restapi.demoqa.com/customer";
+		RequestSpecification request = RestAssured.given();
+		
+		JSONObject requestparams = new JSONObject();
+		
+		
+		
+	}
+
+}

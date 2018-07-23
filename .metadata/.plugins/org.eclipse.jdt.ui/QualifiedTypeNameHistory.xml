@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="io.restassured.internal.proxy.RestAssuredProxySelectorRoutePlanner"/>
+<fullyQualifiedTypeName name="javax.xml.ws.Response"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.jsonFormatVisitors.JsonArrayFormatVisitor"/>
+<fullyQualifiedTypeName name="io.restassured.response.ResponseBody"/>
+<fullyQualifiedTypeName name="groovyjarjarantlr.collections.List"/>
+<fullyQualifiedTypeName name="idea.tz.com.idea.tz.com.ContentAPIResponse"/>
+<fullyQualifiedTypeName name="org.codehaus.groovy.classgen.ReturnAdder"/>
+<fullyQualifiedTypeName name="java.awt.image.renderable.RenderableImageProducer"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.google.common.net.MediaType"/>
+<fullyQualifiedTypeName name="org.apache.http.client.methods.RequestBuilder"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.squareup.okhttp.Response"/>
+<fullyQualifiedTypeName name="java.net.URI"/>
+<fullyQualifiedTypeName name="io.restassured.internal.http.URIBuilder"/>
+<fullyQualifiedTypeName name="iDea.liveTV.EncryptAPI"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.Request"/>
+<fullyQualifiedTypeName name="iDea.liveTV.AuthCall"/>
+<fullyQualifiedTypeName name="io.restassured.http.Method"/>
+<fullyQualifiedTypeName name="iDea.liveTV.Streaming"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.util.JSONPObject"/>
+<fullyQualifiedTypeName name="groovyjarjarantlr.Parser"/>
+<fullyQualifiedTypeName name="javax.xml.bind.ParseConversionEvent"/>
+<fullyQualifiedTypeName name="io.restassured.parsing.Parser"/>
+<fullyQualifiedTypeName name="idea.tz.Ditto.com.GetTokenId"/>
+<fullyQualifiedTypeName name="java.net.InetAddress"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.core.JsonParser"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="javax.net.ssl.HttpsURLConnection"/>
+<fullyQualifiedTypeName name="io.restassured.specification.RequestSpecification"/>
+<fullyQualifiedTypeName name="io.restassured.RestAssured"/>
+<fullyQualifiedTypeName name="io.restassured.response.Response"/>
+<fullyQualifiedTypeName name="io.restassured.path.json.JsonPath"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

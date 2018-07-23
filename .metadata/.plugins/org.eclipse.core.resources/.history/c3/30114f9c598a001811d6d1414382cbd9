@@ -1,0 +1,33 @@
+package idea.tz.Ditto.com;
+
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+public class Streaming {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Getauth and token 
+		
+		
+		GetTokenId gt = new GetTokenId();
+		String token = gt.TokenID;
+		
+
+		
+		RestAssured.baseURI="";
+		RequestSpecification request = RestAssured.given();
+		
+		
+		request.headers("Content-Type","application/json");
+		request.headers("Accept","application/json");
+
+		request.formParam("auth_token", "TUcJYNdpPqq7KURLLzYJ");
+		request.formParam("region","IN");
+		request.formParam("token_id",token);
+		request.formParam("","");
+
+	}
+
+}

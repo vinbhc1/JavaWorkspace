@@ -1,0 +1,23 @@
+package iDea.liveTV;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.specification.RequestSpecification;
+
+public class AuthCall {
+	
+public static void main(String[] args) {
+	
+	RestAssured.baseURI= "http://search-prd-vodfilter-cyk5ba6gxhhqs2fq7fs77dbiz4.ap-southeast-1.cloudsearch.amazonaws.com/2013-01-01/search?q=devdas%2A%7Cdevdas%2F&start=0&size=500";
+	
+	RequestSpecification httpRequest = RestAssured.given();
+	httpRequest.header("Content-Type", "application/json");
+		
+	io.restassured.response.Response response = httpRequest.request(Method.GET);
+	
+	
+	System.out.println(response);
+}
+	
+	
+}

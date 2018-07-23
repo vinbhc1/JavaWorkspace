@@ -1,0 +1,21 @@
+package idea.tz.Ditto.com;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class LiveTVAPI {
+
+	
+	public static void main(String[] args) {
+	
+		RestAssured.baseURI = "https://con.ideamovieclub.net/v1/livestreams?iosbuildversion=2.2.6";
+		RequestSpecification req = RestAssured.given();
+		
+		Response response = req.get(RestAssured.baseURI);
+		
+	}
+	
+	
+
+}
