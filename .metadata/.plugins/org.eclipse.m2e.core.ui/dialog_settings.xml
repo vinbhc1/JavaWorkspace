@@ -62,12 +62,18 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Idea.tz.SeleniumTest"/>
+			<item value="Idea.tz.selenium"/>
+			<item value="Idea.tz.Selenium.test"/>
 			<item value="Idea.tz.RestAPI1"/>
 		</list>
 		<list key="groupId">
 			<item value="Idea.tz"/>
 		</list>
 		<list key="artifactId">
+			<item value="SeleniumTest"/>
+			<item value="selenium"/>
+			<item value="Selenium.test"/>
 			<item value="RestAPI1"/>
 		</list>
 		<list key="projectNameTemplate">

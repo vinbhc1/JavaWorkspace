@@ -6,11 +6,15 @@ public class HomeAPI extends RestConstants {
 	
 public static void main(String[] args) {
 	
-	RestAssured.baseURI= "https://con.ideamovieclub.net";
+
+	RestConstants rt = new RestConstants();
+	
+	RestAssured.baseURI= "https://con.ideamovieclub.net/";
 	
 	RequestSpecification httpRequest = RestAssured.given();
 	
-	io.restassured.response.Response response = httpRequest.request(Method.GET, "LiveTv");
+
+	io.restassured.response.Response response = httpRequest.get(rt.LiveTV);
 	
 	String responeBody = response.getBody().asString();
 	

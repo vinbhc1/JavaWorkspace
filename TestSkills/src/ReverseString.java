@@ -22,7 +22,12 @@ public class ReverseString {
 		
 		System.out.println(reverse);
 		
-		if (Str ==reverse){
+		System.out.println(Str);
+		
+		
+		System.out.println(Str==reverse);
+		
+		if (Str.equalsIgnoreCase(reverse)){
 			System.out.println("palindrome");
 			
 		}

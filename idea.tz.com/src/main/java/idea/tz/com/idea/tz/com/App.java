@@ -3,17 +3,10 @@ package idea.tz.com.idea.tz.com;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.testng.Assert;
-
-import java.util.List;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.http.Header;
-import io.restassured.http.Headers;
 import io.restassured.http.Method;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 
 
@@ -37,7 +30,7 @@ public class App extends RestConstants
     	
     	
     	
-    	int PAGE_SIZE = response.op
+    	int PAGE_SIZE = response.optjson;
         JSONArray jsonArray = ((JSONArray) response).optJSONArray("LiveTvArr");
 Object tvList;
 		//            if (null != jsonArray)
